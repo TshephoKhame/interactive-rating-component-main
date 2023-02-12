@@ -1,0 +1,145 @@
+﻿:root {
+    --clr-orange: hsl(25, 97%, 53%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-ligthgrey: hsl(217, 12%, 63%);
+    --clr-mediamgray: hsl(216, 12%, 54%);
+    --clr-darkblue: hsl(213, 19%, 18%);
+    --clr-darkblue2: hsl(213, 19%, 23%);
+    --clr-darkerblue: hsl(216, 12%, 8%);
+    --fs-15: .7rem;
+    --fw-400: 400;
+    --fw-700: 700;
+    --ff-overpass: 'Overpass', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+body
+{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    background:var(--clr-darkerblue);
+    font-family:var(--ff-overpass);
+    font-size:var(--fs-15);
+    color:var(--clr-ligthgrey);
+    gap:1rem;
+}
+
+
+/* Change on button clicks*/
+
+.active {
+    background: var(--clr-mediamgray) !important;
+    color: var(--clr-white) !important;
+}
+.card__submitted {
+    display: none !important;
+}
+
+.card__center {
+    text-align: center;
+}
+
+
+/* General Code*/
+h1 {
+    color: var(--clr-white);
+}
+
+.flex-group {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0 .1rem;
+}
+
+    .flex-group div {
+        border-radius: 5rem;
+        background: var(--clr-darkblue2);
+        padding: 12px 16px;
+    }
+
+        .flex-group div:hover {
+            cursor: pointer;
+            background: var(--clr-orange);
+            color: var(--clr-white);
+        }
+
+
+
+.card__star {
+    border-radius: 5rem;
+    background: var(--clr-darkblue2);
+    padding: 9px;
+}
+.card__thankyou {
+    margin: 0 auto;
+}
+
+.card {
+    width:70%;
+    margin: 0 auto;
+    max-width:325px;
+    background:var(--clr-darkblue);
+    padding:25px;
+    display:grid;
+    gap:1rem;
+    border-radius:.875rem;
+}
+.card__selectedrating {
+    border-radius: 5rem;
+    color: var(--clr-orange);
+    background: var(--clr-darkblue2);
+    padding: 6px;
+    width:50%;
+    margin:0 auto;
+}
+
+button {
+    background: var(--clr-orange);
+    border-radius: 1rem;
+    padding: .7rem 1.5rem;
+    border: none;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    font-weight: var(--fw-700);
+}
+
+    button:hover {
+        cursor: pointer;
+        background: var(--clr-white);
+        color: var(--clr-orange);
+    }
+
+
+/* attribution stuff*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+    .attribution a {
+        color: hsl(25, 97%, 53%);
+    }
+
+        .attribution a:hover {
+            color: hsl(0, 0%, 100%);
+        }
